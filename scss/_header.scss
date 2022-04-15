@@ -1,0 +1,151 @@
+// MENU
+
+.header{
+    width: 100%;
+    height: 100px;
+    grid-area: header;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:$color-blanco;
+    z-index: 2;
+    box-shadow: 1px 1px 2px rgba(1,1,1,.2);
+}
+
+.menu__logo{
+    font-size: $menu-logo;
+    margin-left: 2rem;
+    padding-right: 10px;
+    font-weight:100;
+}
+
+
+.menu__opciones_lista{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    grid-gap: 1.5rem;   
+    flex-grow: 1;
+}
+
+.menu__opciones_lista li{
+    text-align: center;
+    transition: 1s ease all;
+}
+
+
+.menu__productos__desplegable ul{
+    list-style: none;
+    position: absolute;
+    width: 180px;
+    display: none;
+    height: 180px;
+    background-color: $color-blanco;
+    cursor: pointer;
+
+}
+.menu__productos__desplegable ul li a{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+   
+}
+
+.menu__productos__desplegable ul li {
+    padding-top: 10px;
+}
+.menu__productos__desplegable:hover ul{
+    display: block;
+}
+
+.menu__opciones_lista  > li  a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $color-negro;
+    letter-spacing: 1.5px;
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+ 
+}
+
+.menu__opciones_lista > li a:after{
+    position: absolute;
+    transition: all .5s ease;   
+    content: "";
+    height: 3px;
+    background-color: $color-fuerte;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+}
+
+.menu__opciones_lista > a:hover{
+    color: $color-fuerte;
+}
+
+
+.menu__opciones_lista li a:hover:after{
+    width: 100%;
+}
+
+.menu__icon{
+    display: flex;
+    grid-gap: 1rem;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+/* BAG con JS */
+
+.container__bag{
+    position: relative;
+    right: 20px;
+
+}
+
+.bag{
+
+    height: 150px;
+    background-color:$color-negro;
+    position: absolute;
+    width: 300px;
+    right: 24px;
+    border-radius: 5px;
+    display: none;
+    transition: 1s ease all;
+}
+
+.bag span{
+    color: var(--negro);
+    margin-top: 10px;
+    padding-left: 20px;
+    background-color: $color-blanco;
+    width: 300px;
+    display: block;
+
+}
+.bag button{
+    margin-left: 100px;
+    background-color: $color-blanco;
+    width: 120px;
+    height: 30px;
+    font-weight: 900;
+    border: none;
+    margin-top: 80px;
+    cursor: pointer;
+
+}
+
+.container__bag:hover .bag {
+    display: block;
+}
+
+.icon{
+    width: 35px;
+    cursor: pointer;
+    margin-right: 20px;
+}

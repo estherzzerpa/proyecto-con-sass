@@ -1,3 +1,4 @@
+
 *,
 *:after,
 *:before{
@@ -27,13 +28,12 @@ html{
     grid-template-rows: 150px 150px auto 300px;
     grid-template-areas:
     "header        header        header"
-    "navbar        navbar        navbar"
+    "navbar_filter navbar_filter navbar_filter"
     "container__main container__main container__main"
     "grid-footer   grid-footer   grid-footer"
     ;
 }
 
-/* MENU */
 
 .header{
     width: 100%;
@@ -183,10 +183,12 @@ html{
     margin-right: 20px;
 }
 
+
+
 /* CONTENIDO */
 
-.navbar{
-    grid-area: navbar;
+.navbar_filter{
+    grid-area: navbar_filter;
     display: flex;
     width: 80%;
     justify-content: space-between;
@@ -284,10 +286,10 @@ h1{
 
 }
 
-/* GRID FOOTER*/
+ /* GRID FOOTER*/
 
 
-.grid-footer{
+ .grid-footer{
     grid-area: grid-footer;
     display: grid;
     grid-template-rows: 3fr 2fr 1fr;
@@ -310,7 +312,6 @@ h1{
     margin-top: 50px;
    
 }
-
 .info1, .info2{
     display: flex;
     flex-direction: column;
@@ -351,7 +352,6 @@ h1{
     align-items: center;
     text-align: center;
 }
-
 
 /* RESPONSIVE */
 

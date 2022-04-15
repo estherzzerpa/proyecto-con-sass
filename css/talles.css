@@ -7,6 +7,14 @@
     font-family: 'Cinzel', serif;
 }
 
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(112, 4, 4);
+}
+
+
 html{
     height: 100%;
 }

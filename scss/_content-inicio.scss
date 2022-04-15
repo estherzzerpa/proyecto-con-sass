@@ -1,0 +1,254 @@
+
+
+/* CONTENIDO INICIO */
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navbar h4{
+    margin-top: 2rem;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+
+}
+
+.navbar h2{
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+}
+
+.content__eslogan{
+    color: $color-fuerte;
+    text-shadow: 1px 1px 2px rgba(54, 44, 44, 0.36);
+
+}
+
+
+.flex-main{
+    grid-area: flex-main;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+}
+
+
+.container__image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    gap: 1rem;
+}
+
+.container__image .capa  span{
+    color: $color-blanco;
+    font-size: 20px;
+    transition: all .6s ease-out;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    
+}
+
+.share__img .capa:hover span{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.815);
+}
+
+.share__img img{
+    transition: all .6s ease-out;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.content__image-1{
+    width: 100%;   
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.share__img:hover img {
+    transform:scale(1.1);
+}
+
+.share__img:hover .capa{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+
+}
+
+.content__image-2{
+    width: 95%;   
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.content__image-3{
+    width: 80%;   
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color:rgba(119, 103, 103, 0.384) ;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+
+}
+
+.content__button{
+    grid-area: content__button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content__button button{
+    background-color: $color-negro;
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color:$color-blanco;
+    cursor: pointer;
+}
+
+
+.content__button a{
+    text-decoration: none;
+    color: $color-blanco;
+    letter-spacing: 1px;
+}
+
+
+/* TENDENCIAS */
+
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 100px;
+}
+
+.flex-section{
+    grid-area: flex-section;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.container__card{
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    width: 320px;
+    align-items: center;
+    justify-content: center;
+    transition: all .6s ease-in;
+}
+
+.container__img{
+    width: 300px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container__img img{
+    width: 100%;
+    height: 100%;
+    transition: all .9s ease-out;
+}
+        
+.capa2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(119, 103, 103, 0.384);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+}
+
+.container__img:hover .capa2{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.capa2  span  {
+    position: absolute;
+    text-decoration: none;
+    color: $color-blanco;
+    opacity: 0;
+    top: 50%;
+    left: 45%;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.815);
+    transition: all .8s ease-out;
+}
+
+.capa2:hover span{
+    opacity: 1;
+    top: 40%;
+}
+
+
+.container__img:hover img {
+    transform: scale(1.1);
+}
+
+.container__card:hover{
+    box-shadow: 1px 1px 2px 1px rgba(1,1,1,.2);
+    transform: scale(1.1);
+
+}
+
+.descripcion__tendencias{
+    padding-left: 10px;
+    padding-top: 10px;
+}

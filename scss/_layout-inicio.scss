@@ -1,0 +1,21 @@
+
+html{
+    height: 100%;
+}
+
+/* LAYOUT GRID */
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px 150px auto 250px auto 100px 300px;
+    grid-template-areas:
+    "header       header       header"
+    "navbar       navbar       navbar"
+    "flex-main    flex-main    flex-main"
+    "sidebar      sidebar      sidebar"
+    "flex-section flex-section flex-section"
+    "content__button content__button content__button"
+    "grid-footer  grid-footer  grid-footer"
+    ;
+}
