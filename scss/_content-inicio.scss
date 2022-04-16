@@ -1,7 +1,7 @@
 
-@import "./4-elements/capa-hover";
-@import "./buttons";
-@import "./card-img";
+@import "capa-hover";
+@import "button";
+@import "card-img";
 
 /* CONTENIDO INICIO */
 
@@ -172,13 +172,7 @@
 }
 
 .container__card{
-    display: flex;
-    flex-direction: column;
-    height: 540px;
-    width: 320px;
-    align-items: center;
-    justify-content: center;
-    transition: all .6s ease-in;
+    @extend .card
 }
 
 .container__img{
@@ -186,48 +180,36 @@
     height: 420px;
     position: relative;
     overflow: hidden;
-}
-
-.container__img img{
-    width: 100%;
-    height: 100%;
-    transition: all .9s ease-out;
+    img{
+        width: 100%;
+        height: 100%;
+        transition: all .9s ease-out;
+    }
 }
         
 .capa{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(119, 103, 103, 0.384);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 500ms ease-out;
-    cursor: pointer;
-    top: 0;
-    bottom: 0;
+    @extend .capa-hover;
+    span  {
+        position: absolute;
+        text-decoration: none;
+        color: $color-blanco;
+        opacity: 0;
+        top: 50%;
+        left: 45%;
+        font-size: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.815);
+        transition: all .8s ease-out;
+    }
+    &:hover span {
+        opacity: 1;
+        top: 40%;
+    }
 }
 
-.container__img:hover .capa2{
+.container__img:hover .capa{
     display: block;
     opacity: 1;
     visibility: visible;
-}
-
-.capa  span  {
-    position: absolute;
-    text-decoration: none;
-    color: $color-blanco;
-    opacity: 0;
-    top: 50%;
-    left: 45%;
-    font-size: 20px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.815);
-    transition: all .8s ease-out;
-}
-
-.capa:hover span{
-    opacity: 1;
-    top: 40%;
 }
 
 
