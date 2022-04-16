@@ -1,10 +1,10 @@
-@import "variables";
-@import "box-sizing";
-@import "header";
-@import "footer";
-@import "content-inicio";
-@import "mobile-inicio";
-@import "layout-inicio";
+@import "./1-setting/variables";
+@import "./3-generic/box-sizing";
+@import "./5-objects/layout-inicio";
+@import "./6-component/header";
+@import "./6-component/footer";
+@import "./6-component/content-inicio";
+@import "./7-utilities/mobile-inicio";
 
 body::-webkit-scrollbar{
     width: 10px;
