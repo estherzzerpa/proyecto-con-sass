@@ -1,0 +1,15 @@
+/* CONTENIDO ENVIOS */
+
+.container__main{
+    grid-area: container__main;
+    width: 80%;
+    margin: auto;
+    grid-gap: 3rem;
+    p{
+        display: inline;
+    }
+    .txt-color{
+        margin: 1.5rem 0;
+        color: $color-fuerte;
+    }
+}

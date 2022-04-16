@@ -1,0 +1,102 @@
+
+/* CONTENIDO */
+
+.navbar_filter{
+    grid-area: navbar_filter;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px;
+   
+}
+
+h4{
+  padding-bottom: 2rem; 
+}
+
+.container__main{
+    grid-area: container__main;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+
+}
+
+.container__productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    grid-gap: 1rem;
+}
+
+ .card__producto{
+    position: relative;
+    max-width: 320px;
+    max-height: 360px;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px 10px;
+}
+
+.txt-color{
+    color: $color-fuerte;
+}
+
+.card__img{
+    position: relative;
+    transition: all .5s ease-out;
+    width: 100%;
+    img{
+
+        position: relative;
+        transition: all 1s ease-out;
+        height: 360px;
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+
+.card__info{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(167, 167, 167, 0.247);
+    position: absolute;
+    bottom: 0;
+    transition: all .5s ease-in-out;
+    button{
+        width: 100px;
+        height: 30px;
+        background-color:$color-blanco;
+        color: $color-negro;
+        border: none;
+        font-weight: 900;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.card__info p, .card__info span{
+    font-weight:400;
+    padding: 2px;
+    color: $color-negro;
+}
+
+.card__img:hover{
+    transform: scale(1.1);
+
+}
+
+.card__img:hover > .card__info{
+    height: 160px;
+    background-color:$color-capa-blur;
+
+}

@@ -481,10 +481,7 @@ h1{
 
     /* MAIN */
   
-    .container__productos{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  
 
 
     /* FOOTER */
@@ -495,10 +492,3 @@ h1{
 }
 
 
-
-@media screen and (max-width:620px){
-
-    .container__productos{
-        grid-template-columns: 1fr;
-    }
-}

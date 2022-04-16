@@ -1,0 +1,17 @@
+html{
+    height: 100%;
+}
+
+/* LAYOUT GRID */
+
+.#{$layout}-productos{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 150px 150px auto 300px;
+    grid-template-areas:
+    "header        header        header"
+    "navbar_filter navbar_filter navbar_filter"
+    "container__main container__main container__main"
+    "grid-footer   grid-footer   grid-footer"
+    ;
+}

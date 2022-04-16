@@ -5,7 +5,7 @@ html{
 
 /* LAYOUT GRID */
 
-.grid-container{
+.#{$layout}-index{
     display:grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 150px 150px auto 250px auto 100px 300px;

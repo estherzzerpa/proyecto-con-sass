@@ -1,0 +1,25 @@
+
+/* CONTENIDO */
+
+.container__article{
+    grid-area: container__article;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    grid-gap:2rem;
+    width: 90%;
+    
+    .txt-color{
+        color: $color-fuerte;
+}
+
+}
+
+table, td{
+    color: var(--blanco);
+    background-color: rgba(143, 0, 0, 0.603);
+    height: 90px;
+    text-align: center;
+}

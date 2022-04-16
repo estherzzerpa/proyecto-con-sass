@@ -1,0 +1,17 @@
+html{
+    height: 100%;
+}
+
+/* LAYOUT GRID */
+
+.#{$layout}-contacto{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px 80px auto 300px;
+    grid-template-areas:
+    "header          header"
+    "info__tienda    info__tienda"
+    "container__main container__main "
+    "grid-footer     grid-footer"
+    ;
+}

@@ -1,15 +1,35 @@
+// VARIABLES
+
 @import "./1-setting/variables";
+
+// BOX SIZING
+
 @import "./3-generic/box-sizing";
+
+// GENERIC
+@import "./3-generic/scroll-style";
+
+// ESTRUCTURA
+
 @import "./5-objects/layout-inicio";
+@import "./5-objects/layout-productos";
+@import "./5-objects/layout-contacto";
+@import "./5-objects/layout-envios";
+@import "./5-objects/layout-talles";
+
+// COMPONENTES
+
 @import "./6-component/header";
 @import "./6-component/footer";
 @import "./6-component/content-inicio";
-@import "./7-utilities/mobile-inicio";
+@import "./6-component/content-productos";
+@import "./6-component/content-contacto";
+@import "./6-component/content-envios";
+@import "./6-component/content-talles";
 
-body::-webkit-scrollbar{
-    width: 10px;
-}
-body::-webkit-scrollbar-thumb{
-    background-color: rgb(112, 4, 4);
-}
+
+// MOBILE
+
+@import "./7-utilities/mobile-inicio";
+@import "./7-utilities/mobile-productos";
 

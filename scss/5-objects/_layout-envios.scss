@@ -1,0 +1,15 @@
+
+html{
+    height: 100%;
+}
+
+.#{$layout}-envios{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px auto 300px;
+    grid-template-areas:
+    "header          header"
+    "container__main container__main "
+    "grid-footer     grid-footer"
+    ;
+}
