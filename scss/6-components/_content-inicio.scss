@@ -1,0 +1,172 @@
+
+@import "./4-elements/capa-hover";
+@import "./buttons";
+@import "./card-img";
+
+/* CONTENIDO INICIO */
+
+.navbar {
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h4{
+        margin-top: 2rem;
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+    h2{
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+        letter-spacing: 3px;
+    }
+}
+
+.content__eslogan{
+    color: $color-fuerte;
+    text-shadow: 1px 1px 2px rgba(54, 44, 44, 0.36);
+
+}
+
+.flex-main{
+    grid-area: flex-main;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.container__image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin{
+        bottom: 2rem;
+        top: 2rem;
+    }
+    position: relative;
+    gap: 1rem;
+    span{
+        color: $color-blanco;
+        font-size: 20px;
+        transition: all .6s ease-out;
+        position: absolute;
+        left: 45%;
+        top: 60%;
+    }
+}
+
+.share__img .capa:hover span{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.815);
+}
+
+.share__img img{
+    transition: all .6s ease-out;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+.share__img:hover img {
+    transform:scale(1.1);
+}
+
+.share__img:hover .capa{
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+
+}
+.content__image-1{
+    width: 100%;   
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.content__image-2{
+    @extend .content__image-1;
+    width: 95%;   
+    height: 95%;
+    
+}
+
+.content__image-3{
+    @extend .content__image-1;
+    width: 80%;   
+    height: 80%;
+}
+
+.capa{
+    @extend .capa-hover;
+}
+
+.content__button{
+    @extend .button;
+}
+
+
+/* TENDENCIAS */
+
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 100px;
+}
+
+.flex-section{
+    grid-area: flex-section;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.container__card{
+    @extend .card
+}       
+
+.container__img:hover .capa{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.capa:hover span{
+    opacity: 1;
+    top: 40%;
+}
+
+
+.container__img:hover img {
+    transform: scale(1.1);
+}
+
+.container__card:hover{
+    box-shadow: 1px 1px 2px 1px rgba(1,1,1,.2);
+    transform: scale(1.1);
+}
+
+.descripcion__tendencias{
+    padding{
+        left:10px ;
+        top: 10px;
+    }
+}

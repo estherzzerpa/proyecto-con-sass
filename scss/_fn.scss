@@ -1,0 +1,4 @@
+@function sizeImg($size, $porcentaje) {
+    
+    @return $size - $porcentaje;
+}

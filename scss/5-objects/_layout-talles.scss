@@ -1,0 +1,15 @@
+html{
+    height: 100%;
+}
+
+
+.#{$layout}-talles{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px auto 300px;
+    grid-template-areas:
+    "header             header"
+    "container__article container__article "
+    "grid-footer        grid-footer"
+    ;
+}

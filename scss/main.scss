@@ -1,15 +1,9 @@
-@import "variables";
-@import "box-sizing";
-@import "header";
-@import "footer";
-@import "content-inicio";
-@import "mobile-inicio";
-@import "layout-inicio";
-
-body::-webkit-scrollbar{
-    width: 10px;
-}
-body::-webkit-scrollbar-thumb{
-    background-color: rgb(112, 4, 4);
-}
-
+@import "./1-settings/variables";
+@import "./3-generics/box-sizing";
+@import './4-elements/scroll-style';
+@import "./5-objects/layout-inicio";
+@import "./5-objects/layout-talles";
+@import "./6-components/header";
+@import "./6-components/footer";
+@import "./6-components/content-inicio";
+@import "./7-utilities/mobile-inicio";

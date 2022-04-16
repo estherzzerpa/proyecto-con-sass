@@ -217,6 +217,7 @@ table, td{
 }
 
 .footer__logo, .footer__redes {
+    
     font-size: var(--footer-logo);
     color: black;
     display: flex;
