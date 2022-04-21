@@ -26,7 +26,7 @@
 }
 
 .txt-color{
-    color: $color-fuerte;
+    color: map-get($paleta, primary );
     text-shadow: 1px 1px 2px rgba(54, 44, 44, 0.36);
 
 }
@@ -53,17 +53,16 @@
     margin-top: 2rem;
     position: relative;
     gap: 1rem;
+    .capa  span{
+        color: map-get($paleta, basic );
+        font-size: 20px;
+        transition: all .6s ease-out;
+        position: absolute;
+        left: 45%;
+        top: 60%;
+    }
 }
 
-.container__image .capa  span{
-    color: $color-blanco;
-    font-size: 20px;
-    transition: all .6s ease-out;
-    position: absolute;
-    left: 45%;
-    top: 60%;
-    
-}
 
 .share__img .capa:hover span{
     display: block;
@@ -77,9 +76,7 @@
     transition: all .6s ease-out;
     cursor: pointer;
     width: 100%;
-
 }
-
 
 .share__img:hover img {
     transform:scale(1.1);
@@ -89,7 +86,6 @@
     opacity: 1;
     visibility: visible;
     width: 100%;
-
 }
 
 .content__image-1{
@@ -121,34 +117,15 @@
 }
 
 .content__button{
-    @extend .button;
+    @include btn(150px, 40px);
 }
 
-.content__button{
-    grid-area: content__button;
-    display: flex;
+.content__button-1{
+    @include btn(150px, 40px);
+    grid-area: content__button-1;
     justify-content: center;
     align-items: center;
-
 }
-.content__button button{
-    background-color: $color-negro;
-    width: 150px;
-    height: 40px;
-    border: none;
-    outline: none;
-    font-size: 12px;
-    color:$color-blanco;
-    cursor: pointer;
-}
-
-
-.content__button a{
-    text-decoration: none;
-    color: $color-blanco;
-    letter-spacing: 1px;
-}
-
 
 /* TENDENCIAS */
 
@@ -192,7 +169,7 @@
     span  {
         position: absolute;
         text-decoration: none;
-        color: $color-blanco;
+        color:  map-get($paleta, basic);
         opacity: 0;
         top: 50%;
         left: 45%;

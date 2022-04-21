@@ -1,9 +1,8 @@
-.button{
-    display: flex;
- 
+@mixin btn($width, $height){
     background-color: $color-negro;
-    width: 150px;
-    height: 40px;
+    text-align: center;
+    width: $width;
+    height: $height;
     border: none;
     outline: none;
     font-size: 12px;

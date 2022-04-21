@@ -1,4 +1,7 @@
 
+  @import "./button";
+
+
   /* CONTENIDO */
 
   #container__main{
@@ -12,7 +15,7 @@
 
 .txt-color{
     margin: 50px 0;
-    color: $color-fuerte;
+    color: map-get($paleta, primary);
     transition: all .5s ease-in;
     border-bottom: 1px;
 
@@ -48,16 +51,11 @@ textarea{
 }
 
 button{
-    width: 100%;
-    height: 30px;
-    border: none;
-    background-color:$color-negro;
-    color: var(--blanco);
-    font-weight: 400;
-    transition: .5s ease-in;
-}
-button:hover{
-    background-color:$color-fuerte;
+    @include btn(100%, 40px);
+    transition:all .5s ease-in ;
+    &:hover{
+        background-color:map-get($paleta, primary );
+    }
 }
 
 .info__tienda{

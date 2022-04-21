@@ -10,6 +10,6 @@
     }
     .txt-color{
         margin: 1.5rem 0;
-        color: $color-fuerte;
+        color: map-get($paleta,primary);
     }
 }
