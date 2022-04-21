@@ -53,6 +53,7 @@
     margin-top: 2rem;
     position: relative;
     gap: 1rem;
+    
     .capa  span{
         color: map-get($paleta, basic );
         font-size: 20px;
@@ -135,8 +136,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding-top: 100px;
+    gap: 3px;
+    padding-top: 90px;
+    margin-bottom: 60px;
 }
 
 .flex-section{

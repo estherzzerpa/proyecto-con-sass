@@ -14,7 +14,7 @@
 }
 
 @media screen and (max-width:860px){
-    .grid-container{
+    .#{$layout}-index{
         display:grid;
         grid-template-columns: auto auto;
         grid-template-rows: 100px 100px auto 300px auto 100px 200px;
@@ -24,7 +24,7 @@
         "flex-main flex-main"
         "sidebar   sidebar"
         "flex-section flex-section"
-        "content__button content__button"
+        "content__button-1 content__button-1"
         "grid-footer grid-footer"
         ;
     }
@@ -128,7 +128,6 @@
 
     }
 
-
     .menu__hamburguesa:hover .container__opciones{
         display: block;
     }
@@ -143,7 +142,11 @@
     .content__image-1{
         display: none;
     }
-   
+
+    .content__image-2{
+        display: flex;
+        margin-top: 60px;
+    }
 
     .flex-main{
         margin: auto;
