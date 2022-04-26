@@ -8,9 +8,26 @@ $paleta:(
     basic2:#000,
     primary:rgb(114, 7, 7),
 );
+$color-p:rgb(66, 51, 51);
 $color-capa-blur:rgba(252, 238, 238, 0.521);
 $dark-opacity:rgba(119, 103, 103, 0.384);
-//  LOGO 
+//  LOGO SIZE
 $menu-logo:2.5rem;
 $footer-logo:2rem;
+
+// FONT SIZE
+$menu-size:1.3rem;
+$desplegable-size: 1.2rem;
+$h4:0.6rem;
+
+
+//FONT FAMILY
+$font-title: 'Cinzel', serif;
+$font-p: 'Montserrat', sans-serif;
+
+//  FONT WEIGTH
+$font-light:100;
+
+
+// LAYOUT ALL
 $layout:"grid-container";

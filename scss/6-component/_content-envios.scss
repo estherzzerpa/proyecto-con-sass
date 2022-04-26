@@ -1,15 +1,45 @@
 /* CONTENIDO ENVIOS */
 
-.container__main{
-    grid-area: container__main;
-    width: 80%;
-    margin: auto;
+.container__main-prd{
+  
+ 
+    grid-area: container__main-prd;
+    width: 100%;
     grid-gap: 3rem;
     p{
-        display: inline;
+        font: {
+            family:$font-p;
+            weight: $font-light;
+        }
+        display: flex;
+        flex-direction: column;
+
+        color: $color-p;
     }
     .txt-color{
         margin: 1.5rem 0;
         color: map-get($paleta,primary);
     }
 }
+
+h2, h3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p strong{
+    font-family: $font-p;
+}
+
+.container__info {
+    margin-top: 50px;
+    margin-left:60px;
+    ul li{
+        font: {
+            family:$font-p;
+        }
+    padding: 10px;
+    }
+
+}
+

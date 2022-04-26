@@ -55,7 +55,7 @@
                     </ul>
                 </li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="enviosRetiros.html">Envios y pagos</a></li>
+                <li><a href="enviosRetiros.html">Terminos y Condiciones</a></li>
                 <li><a href="talles.html">Talles</a></li>
             </ul>
         </div>
@@ -80,54 +80,55 @@
 
         <!-- CONTENIDO -->
 
-        <nav class="navbar_filter">
+    <nav class="navbar_filter">
 
-            <div class="filtrar_medida">
+        <div class="filtrar_medida">
 
-                <h4>filtrar por medida<h4>
+            <h4>filtrar por medida<h4>
 
-                <select name="tallas">
-                    <option value="XL">XL</option>
-                    <option value="L">Large</option>
-                    <option value="M">Medium</option>
-                    <option value="S">Small</option>
-                </select>
+            <select name="tallas">
+                <option value="XL">XL</option>
+                <option value="L">Large</option>
+                <option value="M">Medium</option>
+                <option value="S">Small</option>
+            </select>
 
+        </div>
+        <div class="filtrar_producto">
+
+            <h4>Filtrar por producto</h4>
+            <div>
+                <input type="checkbox" name="blusas">
+                <label for="blusas">Blusas</label>
             </div>
-            <div class="filtrar_producto">
+        
+            <div>
+                <input type="checkbox" name="remeras">
+                <label for="remeras">Remeras</label>
+            </div>
 
-                <h4>Filtrar por producto</h4>
-                <div>
-                    <input type="checkbox" name="blusas">
-                    <label for="blusas">Blusas</label>
-                </div>
+            <div>
+                <input type="checkbox" name="pantalones">
+                <label for="pantalones">Pantalones</label>
+            </div>
             
-                <div>
-                    <input type="checkbox" name="remeras">
-                    <label for="remeras">Remeras</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="pantalones">
-                    <label for="pantalones">Pantalones</label>
-                </div>
-                
-                <div>
-                    <input type="checkbox" name="camperas">
-                    <label for="camperas">Camperas</label>
-                </div>
+            <div>
+                <input type="checkbox" name="camperas">
+                <label for="camperas">Camperas</label>
             </div>
-        </nav>
+        </div>
+    </nav>
             
         <!-- PRODUCTOS -->
             
     <main class="container__main">
+
         <h1 class="txt-color"  >Productos</h1>
 
         <section class="container__productos">
-        
 
             <section class="blusas">
+
                 <h3 id="blusas">Blusas</h3>
     
                 <article class="card__producto" >
@@ -142,7 +143,6 @@
                             <p>Tallas: S M L XL</p>
                             <button>Comprar</button>
                         </div>
-                        
                     </div>
                 </article> 
     
@@ -172,9 +172,7 @@
                             <p>$2000</p>
                             <p>DISPONIBLE</p>
                             <p>Tallas: S M L XL</p>
-                            
                             <button>comprar</button>
-    
                         </div>
                     </div>
                 </article> 
@@ -197,7 +195,6 @@
                             <p>DISPONIBLE</p>
                             <p>Tallas: S M L XL</p>
                             <button>comprar</button>
-
                         </div>
                     </div>
                 </article>
@@ -214,7 +211,6 @@
                             <p>DISPONIBLE</p>
                             <p>Tallas: S M L XL</p>
                             <button>comprar</button>
-
                         </div>
                     </div>
                 </article>
@@ -231,7 +227,6 @@
                             <p>DISPONIBLE</p>
                             <p>Tallas: S M L XL</p>
                             <button>comprar</button>
-
                         </div>
                     </div>
                 </article> 
@@ -369,14 +364,41 @@
             </div>
         </div>
 
-        <div class="container__logos">
+    
 
-            <h2 class="footer__logo">EZ</h2>
+        <div class="pago-envio">
+            <div class="container_metodos">
+                <h4 class="metodos_h4">Metodos de pago</h4>
+                <div class="metodos_logos">
+                    <img src="../assets/icons/metodos-pagos-envios/visa.png" alt="">
+                    <img src="../assets/icons/metodos-pagos-envios/rapipago.png" alt="">
+                    <img src="../assets/icons/metodos-pagos-envios/american-express.png" alt="">
+                    <img src="../assets/icons/metodos-pagos-envios/efectivo.png" alt="">
+                    <img src="../assets/icons/metodos-pagos-envios/mastercard.png" alt="">
+                    <img src="../assets/icons/metodos-pagos-envios/pagofacil.png" alt="">
+                    <img src="../assets/icons/metodos-pagos-envios/mercadopago.png" alt="">
+                </div>
+            </div>
+            <div class="container__logos">
 
-            <div class="footer__redes">
-                <img  src="../assets/icons/facebook.webp" alt="facebook">
-                <img  src="../assets/icons/google.webp" alt="google">
-                <img  src="../assets/icons/instagram.webp" alt="instagram">
+                <h2 class="footer__logo">EZ</h2>
+    
+                <div class="footer__redes">
+                    <img  src="../assets/icons/facebook.webp" alt="facebook">
+                    <img  src="../assets/icons/google.webp" alt="google">
+                    <img  src="../assets/icons/instagram.webp" alt="instagram">
+                </div>
+            </div>
+
+            <div class="container_metodos">
+
+                <h4 class="metodos_h4">Envios</h4>
+                <div class="metodos_logos">
+                    <img src="../assets/icons/metodos-pagos-envios/andreani.png" alt="">
+                    <img src="../assets/icons/metodos-pagos-envios/correo-argentino.png" alt="">
+                    <img src="../assets/icons/metodos-pagos-envios/personalizado.png" alt="">
+                   
+                </div>
             </div>
         </div>
         <div class="footer__legales">

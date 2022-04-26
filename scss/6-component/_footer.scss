@@ -3,7 +3,7 @@
 .grid-footer{
     grid-area: grid-footer;
     display: grid;
-    grid-template-rows: 3fr 2fr 1fr;
+    grid-template-rows: 3fr 3fr 1fr;
     width: 100%;
 }
 
@@ -20,9 +20,9 @@
     align-items: center;
     justify-content: space-around;
     background-color:$color-negro;
-    margin-top: 50px;
-   
+    margin-top: 50px; 
 }
+
 .info1, .info2{
     display: flex;
     flex-direction: column;
@@ -39,17 +39,40 @@
     padding: 2px;  
 }
 
-.footer__redes img{
+.footer__redes img {
     width: 25px;
+}
+
+.metodos_h4, .metodos_logos{
+    padding-bottom: 5px;
+}
+.metodos_logos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    img{
+    width: 35px;
+    margin: 8px;
+    }
+
+}
+
+.pago-envio{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
 }
 
 .container__logos{
     background-color: $color-blanco;
-    height: 115px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.container_metodos{
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__legales{

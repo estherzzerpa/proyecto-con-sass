@@ -1,3 +1,4 @@
+@import "button";
 // MENU
 
 .header{
@@ -48,27 +49,26 @@
 
 }
 .menu__productos__desplegable ul li a{
-    font-size: 1.2rem;
+    font-size:$desplegable-size;
     letter-spacing: 1px;
-   
 }
 
 .menu__productos__desplegable ul li {
     padding-top: 10px;
 }
+
 .menu__productos__desplegable:hover ul{
     display: block;
 }
 
 .menu__opciones_lista  > li  a{
-    font-size: 1.5rem;
+    font-size: $menu-size;
     text-decoration: none;
     color: $color-negro;
     letter-spacing: 1.5px;
     position: relative;
     width: 100%;
     padding: 0 10px;
- 
 }
 
 .menu__opciones_lista > li a:after{
@@ -85,7 +85,6 @@
 .menu__opciones_lista > a:hover{
     color: $color-fuerte;
 }
-
 
 .menu__opciones_lista li a:hover:after{
     width: 100%;
@@ -108,19 +107,18 @@
 }
 
 .bag{
-
     height: 150px;
-    background-color:$color-negro;
+    background-color:$color-blanco;
+    box-shadow: 1px 1px 1px 2px rgba(1,1,1,.2);
     position: absolute;
     width: 300px;
     right: 24px;
-    border-radius: 5px;
     display: none;
     transition: 1s ease all;
 }
 
 .bag span{
-    color: var(--negro);
+    color: $color-negro;
     margin-top: 10px;
     padding-left: 20px;
     background-color: $color-blanco;
@@ -128,15 +126,12 @@
     display: block;
 
 }
+
 .bag button{
-    margin-left: 100px;
-    background-color: $color-blanco;
-    width: 120px;
-    height: 30px;
-    font-weight: 900;
-    border: none;
-    margin-top: 80px;
-    cursor: pointer;
+@include btn(100px, 30px);
+    left: 35%;
+    margin-top: 60px;
+    position: absolute;
 
 }
 
