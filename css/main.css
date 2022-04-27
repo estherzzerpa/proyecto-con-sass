@@ -127,7 +127,7 @@ html {
   position: absolute;
   transition: all .5s ease;
   content: "";
-  height: 3px;
+  height: 1px;
   background-color: #720707;
   width: 0;
   left: 0;
@@ -150,10 +150,20 @@ html {
   position: relative;
   right: 20px; }
 
+.container__bag:after {
+  content: "0";
+  width: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  left: 25px;
+  padding-left: 5px;
+  box-shadow: 1px 1px 2px rgba(1, 1, 1, 0.2); }
+
 .bag {
   height: 150px;
   background-color: #fff;
-  box-shadow: 1px 1px 1px 2px rgba(1, 1, 1, 0.2);
+  box-shadow: 1px 1px 2px rgba(1, 1, 1, 0.2);
   position: absolute;
   width: 300px;
   right: 24px;
