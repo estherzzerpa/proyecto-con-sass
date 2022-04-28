@@ -1,10 +1,9 @@
 
 
-# Entrega del desafio SASS + SEO
+<h1> Tercera Entrega del proyecto</h1>
 
-En la parte de SASS, aplique un mixin en el componte del boton,
-EL map y map-get en los colores, y extends en el elemento "capa" e importe` donde lo iba a usar.
+Utilice un framework para las transiciones y mejorar visualmente la experiencia del usuario.
 
-# SEO
-Agregue las etiquetas meta keywords y decription, coloque palabras clave y una buena descripcion de mi sitio EZ MODA
-Optimice algunas imagenes e iconos para que no resulten tan pesados para los usuarios.
+Mejore algunos detalles de css
+
+Agregue los metadatos.
