@@ -74,7 +74,7 @@ html {
   justify-content: space-between;
   background-color: #fff;
   z-index: 2;
-  box-shadow: 1px 1px 2px rgba(1, 1, 1, 0.2); }
+  box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.2); }
 
 .menu__logo {
   font-size: 2.5rem;
@@ -158,12 +158,12 @@ html {
   background-color: white;
   left: 25px;
   padding-left: 5px;
-  box-shadow: 1px 1px 2px rgba(1, 1, 1, 0.2); }
+  box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.2); }
 
 .bag {
   height: 150px;
   background-color: #fff;
-  box-shadow: 1px 1px 2px rgba(1, 1, 1, 0.2);
+  box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.2);
   position: absolute;
   width: 300px;
   right: 24px;
@@ -716,12 +716,12 @@ table, td {
     margin-top: 8px;
     transform-origin: 0px 100%;
     transition: all 400ms; }
-  .bars__efect:hover .line1__bars-menu {
+  .activeline1__bars-menu {
     transform: rotate(45deg) translate(-2px, 2px); }
-  .bars__efect:hover .line2__bars-menu {
+  .activeline2__bars-menu {
     margin-left: -20px;
     opacity: 0; }
-  .bars__efect:hover .line3__bars-menu {
+  .activeline3__bars-menu {
     transform: rotate(-45deg) translate(-4px, 1px); }
   .container__opciones {
     display: none;
@@ -731,12 +731,22 @@ table, td {
     top: 100px;
     bottom: 0;
     width: 100vw;
-    z-index: 9;
+    opacity: 0;
     background-color: rgba(230, 219, 219, 0.1);
     backdrop-filter: 5px;
     filter: blur(4);
     height: 100vh;
     backdrop-filter: blur(5px); }
+  .container__opciones div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease; }
+  .menu_active {
+    display: block;
+    opacity: 2; }
   .container__opciones li, .container__opciones a {
     width: 100vw;
     list-style: none;
@@ -753,14 +763,6 @@ table, td {
     background-color: black; }
   .container__opciones li:hover > a {
     color: white; }
-  .container__opciones div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .menu__hamburguesa:hover .container__opciones {
-    display: block; }
   /* MAIN */
   .content__image-3 {
     display: none; }
