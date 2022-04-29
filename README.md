@@ -4,6 +4,6 @@
 
 Utilice un framework para las transiciones y mejorar visualmente la experiencia del usuario.
 
-Mejore algunos detalles de css
+Mejore algunos detalles de scss
 
 Agregue los metadatos.
