@@ -254,18 +254,20 @@ html {
 
 .pago-envio {
   display: flex;
-  justify-content: space-evenly;
-  margin: 10px; }
+  justify-content: space-between;
+  margin-left: 10px; }
 
 .container__logos {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .container_metodos {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin: 10px 0 10px 80px; }
 
 .footer__legales {
   background-color: #000;
