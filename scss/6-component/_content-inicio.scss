@@ -37,15 +37,12 @@
     grid-area: flex-main;
     display: flex;
     flex-direction: column;
-    width: 80%;
-    height: 90%;
-    margin: auto;
+    width: 95vw;
+    margin: auto;    
     position: relative;
 }
 
-
 .container__image {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,28 +135,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
-    margin-bottom: 60px;
-    padding: 0;
-    margin: 0;
+    margin: 80px 0;
+   
 }
 
 .flex-section{
     grid-area: flex-section;
-    flex-wrap: wrap;
+    display:flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    display: flex;
-    gap: 1rem;
+    text-align: center;
+    gap: .5rem;
 }
 
 .container__card{
-    @extend .card
+    @extend .card;
+    // overflow: hidden;
 }
 
 .container__img{
-    width: 300px;
     height: 420px;
+    width: 320px;
     position: relative;
     overflow: hidden;
     img{

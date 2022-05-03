@@ -8,39 +8,36 @@
     grid-area: container__main;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-
+    width: 95vw;
+    height: 100vh;
+    margin: auto;
 }
 
 .txt-color{
     margin: 50px 0;
     color: map-get($paleta, primary);
     transition: all .5s ease-in;
-    border-bottom: 1px;
-
 }
 
-.container__input{
+.container__form{
     box-shadow: -0.3px 0.3px 0.5px 0.5px;
-    height: 540px;
     padding: 30px;
-    width: 70%;
+    height: 100%;
+    width: 100%;
+
 }
+
 .input{
     display: flex;
     grid-gap:  5px;
     flex-direction: column;
     font-weight: 900;
-
     input, textarea{
         border: none;
         outline: none;
-        padding-left: 10px;
         height: 30px;
         transition: 1s;
-        box-shadow: -0.3px 0.3px;
+        box-shadow:$shadow;
         &:focus{
             background-color: rgba(143, 29, 29, 0.39);
         }
@@ -52,6 +49,7 @@ textarea{
 }
 
 button{
+
     @include btn(100%, 40px);
     transition:all .5s ease-in ;
     &:hover{
@@ -63,7 +61,7 @@ button{
     grid-area: info__tienda;
     display: flex;
     justify-content: space-between;
-    margin: auto;
     grid-gap: 20px;
+    margin: auto;
     width: 60%;
 }

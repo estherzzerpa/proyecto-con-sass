@@ -1,14 +1,11 @@
 
-html{
-    height: 100%;
-}
 
 /* LAYOUT GRID */
 
-.#{$layout}-index{
+.grid-container-index{
     display:grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 150px 150px auto 250px auto 100px 300px;
+    grid-template-rows: 150px 150px auto 200px auto 100px 300px;
     grid-template-areas:
     "header       header       header"
     "navbar       navbar       navbar"
@@ -18,4 +15,5 @@ html{
     "content__button-1 content__button-1 content__button-1"
     "grid-footer  grid-footer  grid-footer"
     ;
+    
 }

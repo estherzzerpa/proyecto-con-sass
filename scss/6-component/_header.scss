@@ -112,6 +112,7 @@
     border-radius: 50%;
     background-color:rgb(255, 255, 255) ;
     left: 25px;
+    bottom: 18px;
     padding-left:5px;
     box-shadow: $shadow;
 
@@ -126,6 +127,7 @@
     right: 24px;
     display: none;
     transition: 1s ease all;
+    z-index: 999;
 }
 
 .bag span{

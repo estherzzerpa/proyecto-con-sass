@@ -9,17 +9,22 @@
     margin: auto;
     align-items: center;
     grid-gap:2rem;
-    width: 90%;
-    height: 100%;
+    width: 95vw;
+    height: 100vh;
     .txt-color{
         color: $color-fuerte;
 }
 
 }
 
-table, td{
-    color: var(--blanco);
+
+.container__table{
     background-color: rgba(143, 0, 0, 0.603);
-    height: 90px;
+    height: 100%;
+    width: 100%;
     text-align: center;
+    tr, td{
+    color: $color-blanco;
+    background-color: $color-fuerte;
+    }
 }
