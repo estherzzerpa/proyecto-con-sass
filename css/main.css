@@ -696,12 +696,22 @@ p strong {
     position: absolute;
     left: 10px;
     bottom: 20px; }
+  .menu__icon a {
+    position: fixed;
+    bottom: 16vh;
+    left: 88%;
+    background-color: aliceblue;
+    border-radius: 5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; }
   .icon__user {
-    display: none; }
+    text-align: center;
+    margin: 2.8px 2.3px; }
   .menu__hamburguesa {
     display: block;
-    transition: all 0.3s ease-in;
-    z-index: 998; }
+    z-index: 998;
+    box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.2); }
   .bars__efect {
     width: 60px;
     height: 40px;
@@ -709,8 +719,8 @@ p strong {
     cursor: pointer;
     transition: all 400ms;
     position: fixed;
-    bottom: 2vh;
-    left: 88%;
+    bottom: 3vh;
+    left: 84%;
     background-color: #fff;
     box-shadow: 1px 1px 1px rgba(1, 1, 1, 0.2);
     z-index: 999; }
@@ -769,23 +779,17 @@ p strong {
   .container__opciones li:hover > a {
     color: white; }
   /* MAIN */
-  .content__image-3 {
-    display: none; }
-  .content__image-1, .content__image-2, .content__image-3 {
+  .content__image-3, .content__image-1, .content__image-2, .content__image-3 {
     display: none; }
   .content__image-2 {
     display: block;
     margin: auto;
     margin-top: 60px;
-    width: 100%;
     max-width: 480px; }
   .flex-main {
     margin: auto; }
   .container__image {
-    display: block;
-    flex-shrink: 1;
-    flex-grow: 1;
-    flex-basis: auto; }
+    display: block; }
   .navbar {
     margin-top: 100px; }
   .footer__info {

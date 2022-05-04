@@ -1,4 +1,5 @@
 
+
 /* RESPONSIVE INICIO */
 
 .img__mobile{
@@ -30,172 +31,178 @@
      
     }
 
-    /* HEADER */
-    .menu__opciones{
-        display: none;
-    }
-    
-    .menu__logo{
-        position: absolute;
-        left: 10px;
-        bottom: 20px;
-    }
-    .icon__user{
-        display: none;
-    }
+/* HEADER */
+.menu__opciones{
+    display: none;
+}
 
-    .menu__hamburguesa{
+.menu__logo{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+.menu__icon a{
+    position: fixed;
+    bottom: 16vh;
+    left: 88%;
+    background-color: aliceblue;
+    border-radius: 5%;
+    width: 40px ;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.icon__user{
+    text-align: center;
+    margin: 2.8px 2.3px;
+
+}
+
+.menu__hamburguesa{
+    display: block;
+    z-index: 998;
+    box-shadow: $shadow;
+}
+
+.bars__efect{
+    width: 60px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 400ms;
+    position: fixed;
+    bottom: 3vh;
+    left: 84%;
+    background-color: $color-blanco;
+    box-shadow: $shadow;
+    z-index:999 ;
+    span{
+        margin-left: auto;
+        margin-right: auto;
+        margin: auto;
+        width: 30px;
+        height: 1.5px;
+        background-color: black;
         display: block;
-        transition: all 0.3s ease-in;
-        z-index: 998;
+        margin-top: 8px;
+        transform-origin: 0px 100% ;
+        transition: all 400ms;   
     }
+}
 
-        .bars__efect{
-            width: 60px;
-            height: 40px;
-            margin-left: 10px;
-            cursor: pointer;
-            transition: all 400ms;
-            position: fixed;
-            bottom: 2vh;
-            left: 88%;
-            background-color: $color-blanco;
-            box-shadow: $shadow;
-            z-index:999 ;
-            span{
-                margin-left: auto;
-                margin-right: auto;
-                margin: auto;
-                width: 30px;
-                height: 1.5px;
-                background-color: black;
-                display: block;
-                margin-top: 8px;
-                transform-origin: 0px 100% ;
-                transition: all 400ms;   
-            }
-        }
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px, 2px);
+}
 
-    .activeline1__bars-menu{
-        transform: rotate(45deg) translate(-2px, 2px);
-    }
+.activeline2__bars-menu{
+    margin-left: -20px;
+    opacity: 0;
+}
 
-    .activeline2__bars-menu{
-        margin-left: -20px;
-        opacity: 0;
-    }
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-4px, 1px);
+}
 
-    .activeline3__bars-menu{
-        transform: rotate(-45deg) translate(-4px, 1px);
-    }
+.container__opciones{
+    display: none;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(230, 219, 219, 0.1);
+    backdrop-filter:5px;
+    filter: blur(4);
+    backdrop-filter: blur(5px);
+    overflow-x: hidden;
+}
 
-     .container__opciones{
-        display: none;
-        position: fixed;
-        top: 100px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        background-color: rgba(230, 219, 219, 0.1);
-        backdrop-filter:5px;
-        filter: blur(4);
-        backdrop-filter: blur(5px);
-        overflow-x: hidden;
-    }
+.menu_active{
+    display: block;
+}
 
-    .menu_active{
-        display: block;
-   }
-   .container__opciones ul{
+.container__opciones ul{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;  
-   }
+}
 
-    .container__opciones  li, .container__opciones a {
-        width: 100%;
-        list-style:none ;
-        text-decoration: none;
-        color:$color-fuerte;
-        letter-spacing: 2px;
-        padding: .8rem;
-        display: block;
-        font-size: 22px;
-        transition: all 0.3s ease-in;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.815);
-    }
+.container__opciones  li, .container__opciones a {
+    width: 100%;
+    list-style:none ;
+    text-decoration: none;
+    color:$color-fuerte;
+    letter-spacing: 2px;
+    padding: .8rem;
+    display: block;
+    font-size: 22px;
+    transition: all 0.3s ease-in;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.815);
+}
 
-    .container__opciones li:hover {
-        background-color: rgb(0, 0, 0);
-    }
+.container__opciones li:hover {
+    background-color: rgb(0, 0, 0);
+}
 
-    .container__opciones li:hover > a{
-        color: white;
-    }
+.container__opciones li:hover > a{
+    color: white;
+}
 
-    /* MAIN */
+/* MAIN */
 
-    .content__image-3{
-        display: none;
-    }
+.content__image-3, .content__image-1{
+    display: none;
+}
 
-    .content__image-1{
-        display: none;
-    }
+.content__image-2{
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    max-width:480px;
+}
 
-    .content__image-2{
-        display: block;
-        margin: auto;
-        margin-top: 60px;
-        width: 100%;
-        max-width:480px;
-    }
+.flex-main{
+    margin: auto;
+}
 
-    .flex-main{
-        margin: auto;
-    }
+.container__image{
+    display:block;  
+}
 
-    .container__image{
-        display:block;
-        flex-shrink: 1;
-        flex-grow: 1;
-        flex-basis: auto;   
-    }
+.navbar{
+    margin-top: 100px;
+}
 
-    .navbar{
-        margin-top: 100px;
-    }
-
-    .footer__info{
-        padding: 20px;
-    }
+.footer__info{
+    padding: 20px;
+}
 }
 
 
 @media screen and (max-width:786px){
 
-    .footer__info{
-        flex-direction: column;
-        align-items: flex-start;
-        padding-top: 50px;
-    }
-        
-    .pago-envio{
-        flex-direction: column;
-    }
+.footer__info{
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+    
+.pago-envio{
+    flex-direction: column;
+}
 
-    .container_metodos{
-        margin-top: 20px;
-        text-align: center;
-    }
+.container_metodos{
+    margin-top: 20px;
+    text-align: center;
+}
 
-    .metodos_envios, .metodos_pagos{
-        justify-content: center;
-        align-items: center;
-    }
+.metodos_envios, .metodos_pagos{
+    justify-content: center;
+    align-items: center;
+}
 }
 
 
