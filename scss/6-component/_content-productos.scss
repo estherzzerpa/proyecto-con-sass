@@ -51,7 +51,7 @@ h4{
     position: relative;
     overflow: hidden;
     width: 280px;
-    height: 360px;
+    height: 380px;
     img{
         position: relative;
         transition: all 1s ease-out;
@@ -66,7 +66,9 @@ h4{
     height: 75px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(167, 167, 167, 0.247);
+    // background-color: rgba(167, 167, 167, 0.247);
+    filter: blur(4);
+    backdrop-filter: blur(5px);
     position: absolute;
     bottom: 0;
     transition: all .5s ease-in-out;
@@ -85,8 +87,9 @@ h4{
 .card__info p{
     font-weight:$h4;
     padding: 2px;
-    color: $color-negro;
+    color: $color-blanco;
     text-shadow: $shadow;
+
 }
 
 .card__img:hover{
@@ -96,6 +99,4 @@ h4{
 
 .card__img:hover > .card__info{
     height: 170px;
-    background-color:$color-capa-blur;
-
 }
