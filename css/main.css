@@ -434,7 +434,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: .5rem; }
+  gap: 1rem; }
 
 .container__img {
   height: 420px;
@@ -552,7 +552,7 @@ h4 {
   font-weight: 0.6rem;
   padding: 2px;
   color: #fff;
-  text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.2); }
+  text-shadow: 1px 1px 1px rgba(1, 1, 1, 0.408); }
 
 .card__img:hover {
   transform: scale(1.1); }

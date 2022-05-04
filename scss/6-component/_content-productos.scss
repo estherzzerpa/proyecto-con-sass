@@ -66,7 +66,6 @@ h4{
     height: 75px;
     display: flex;
     flex-direction: column;
-    // background-color: rgba(167, 167, 167, 0.247);
     filter: blur(4);
     backdrop-filter: blur(5px);
     position: absolute;
@@ -88,7 +87,7 @@ h4{
     font-weight:$h4;
     padding: 2px;
     color: $color-blanco;
-    text-shadow: $shadow;
+    text-shadow: 1px 1px  1px rgba(1, 1, 1, 0.408);
 
 }
 
