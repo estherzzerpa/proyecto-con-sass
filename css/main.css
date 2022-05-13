@@ -624,8 +624,7 @@ button {
 /* CONTENIDO ENVIOS */
 .container__main-prd {
   grid-area: container__main-prd;
-  width: 100%;
-  grid-gap: 3rem; }
+  width: 90%; }
   .container__main-prd p {
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
@@ -646,7 +645,7 @@ p strong {
 
 .container__info {
   margin-top: 50px;
-  margin-left: 60px; }
+  margin-left: 30px; }
   .container__info ul li {
     font-family: "Montserrat", sans-serif;
     padding: 10px; }
@@ -752,7 +751,6 @@ p strong {
     right: 0;
     width: 100%;
     background-color: rgba(230, 219, 219, 0.1);
-    backdrop-filter: 5px;
     filter: blur(4);
     backdrop-filter: blur(5px);
     overflow-x: hidden; }
