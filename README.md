@@ -1,9 +1,9 @@
 
 
-<h1> Tercera Entrega del proyecto</h1>
+<h1> Proyecto finalizado E-commerce</h1>
 
-Utilice un framework para las transiciones y mejorar visualmente la experiencia del usuario.
+<p>Un gran reto el proyecto, pude plasmar libremente mi creatividad y mi gusto por la moda</p>
 
-Mejore algunos detalles de scss
+<p>Utilice el Preprocesador SASS para compilar mi CSS, unas de las herramientas valiosas que aprendi en este trayecto</p>
 
-Agregue los metadatos.
+
